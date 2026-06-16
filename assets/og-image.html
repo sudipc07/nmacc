@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Source for assets/og-image.png. Rendered at 1200x630 via headless Chrome. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1200px; height: 630px; }
+    body {
+      background: #0a0a0a;
+      color: #f4f6fa;
+      overflow: hidden;
+      position: relative;
+      font-family: "JetBrains Mono", monospace;
+    }
+    .frame { position: absolute; inset: 28px; border: 1px solid #2a2c30; }
+    .crosshair {
+      position: absolute; top: 52px; left: 52px;
+      width: 30px; height: 30px;
+      border-left: 3px solid #d0291c;
+      border-top: 3px solid #d0291c;
+    }
+    .tag {
+      position: absolute; top: 52px; right: 56px;
+      font-size: 16px; letter-spacing: 0.12em; color: #7d8590;
+      text-transform: uppercase;
+    }
+    .content { position: absolute; left: 80px; right: 80px; top: 138px; }
+    .eyebrow {
+      font-size: 19px; letter-spacing: 0.15em; color: #8b9097;
+      text-transform: uppercase;
+    }
+    .name {
+      font-family: "Barlow Condensed", sans-serif; font-weight: 900;
+      font-size: 210px; line-height: 0.82; letter-spacing: 0.015em;
+      text-transform: uppercase; margin-top: 18px;
+    }
+    .role {
+      font-family: "Barlow Condensed", sans-serif; font-weight: 800;
+      font-size: 52px; line-height: 1; letter-spacing: 0.01em;
+      text-transform: uppercase; margin-top: 26px;
+    }
+    .role .r { color: #d0291c; }
+    .sub {
+      font-size: 18px; letter-spacing: 0.09em; color: #c2c6cd;
+      text-transform: uppercase; margin-top: 18px;
+    }
+    .strip {
+      position: absolute; left: 80px; right: 80px; bottom: 66px;
+      border-top: 1px solid #2a2c30; padding-top: 22px;
+      display: flex; gap: 56px;
+      font-size: 17px; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .strip .k { color: #7d8590; }
+    .strip .v { color: #f4f6fa; }
+    .strip .red { color: #d0291c; }
+  </style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="crosshair"></div>
+  <div class="tag">AUTOMATION SYSTEMS</div>
+
+  <div class="content">
+    <div class="eyebrow">[ MONITOR · AUTOMATE · CONTROL · CONNECT ]</div>
+    <div class="name">NMACC</div>
+    <div class="role">MANUFACTURING AUTOMATION <span class="r">SYSTEMS</span></div>
+    <div class="sub">Electronics · Firmware · Software · Test &amp; Validation</div>
+  </div>
+
+  <div class="strip">
+    <span><span class="k">BASE</span> <span class="v">SYDNEY · AU</span></span>
+    <span><span class="k">DEPTH</span> <span class="v">18 YEARS</span></span>
+    <span><span class="k">MODEL</span> <span class="red">SENIOR NETWORK</span></span>
+  </div>
+</body>
+</html>

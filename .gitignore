@@ -1,0 +1,4 @@
+# Local tooling / editor config
+.claude/
+.DS_Store
+*.log
