@@ -327,7 +327,7 @@ main { max-width: var(--maxw); margin: 0 auto; border-left: 1px solid var(--bord
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(220px, 3fr);
+  grid-template-columns: minmax(0, 1fr) 430px;
   gap: 0;
 }
 .hero-main { padding-right: 40px; }
