@@ -175,7 +175,11 @@ em { color: var(--text); font-style: normal; font-weight: 600; }
   letter-spacing: 0.01em;
   white-space: nowrap;
   flex-shrink: 0;
+  color: var(--red);
+  display: inline-flex;
+  align-items: center;
 }
+.wordmark .grip { height: 0.84em; width: auto; margin-left: 0.04em; }
 .header-telemetry {
   display: flex;
   align-items: center;
