@@ -179,17 +179,11 @@ em { color: var(--text); font-style: normal; font-weight: 600; }
   padding: 0 var(--edge);
 }
 .wordmark {
-  font-family: var(--f-display);
-  font-weight: 800;
-  font-size: 22px;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
   flex-shrink: 0;
-  color: var(--red);
   display: inline-flex;
   align-items: center;
 }
-.wordmark .grip { height: 0.84em; width: auto; margin-left: 0.04em; }
+.wordmark img { height: 24px; width: auto; display: block; }
 .header-telemetry {
   display: flex;
   align-items: center;
