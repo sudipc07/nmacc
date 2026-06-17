@@ -393,38 +393,29 @@ main { max-width: var(--maxw); margin: 0 auto; border-left: 1px solid var(--bord
   justify-content: center;
 }
 .hero-viz svg { width: 100%; height: 100%; max-height: 360px; display: block; }
-.viz-base line { stroke: var(--border); stroke-width: 1.5; }
+/* faint etched circuit */
+.viz-base line { stroke: var(--red); stroke-width: 1; opacity: 0.09; }
+.viz-nodes rect { fill: transparent; stroke: var(--red); stroke-width: 1; opacity: 0.13; }
+.viz-nodes .hub { fill: var(--red); opacity: 0.4; }
+
+/* a small light that traces each path and lights it up as it passes */
+.viz-active { filter: drop-shadow(0 0 3px var(--red)); }
 .viz-active line {
   fill: none;
   stroke: var(--red);
-  stroke-width: 2;
-  stroke-linecap: square;
-  stroke-dasharray: 100;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-dasharray: 8 92;
   stroke-dashoffset: 100;
-  animation: vizLink 4.2s ease-in-out infinite;
+  opacity: 0.8;
+  animation: vizTrace 5s linear infinite;
 }
-.viz-nodes rect {
-  fill: transparent;
-  stroke: var(--border-bright);
-  stroke-width: 2;
-  animation: vizNode 4.2s ease-in-out infinite;
-}
-.viz-nodes .hub { stroke: var(--red); fill: var(--red); animation: none; }
-@keyframes vizLink {
-  0%   { stroke-dashoffset: 100; opacity: 0; }
-  12%  { opacity: 1; }
-  45%  { stroke-dashoffset: 0; opacity: 1; }
-  62%  { stroke-dashoffset: 0; opacity: 1; }
-  90%  { stroke-dashoffset: -100; opacity: 1; }
-  100% { stroke-dashoffset: -100; opacity: 0; }
-}
-@keyframes vizNode {
-  0%, 100% { fill: transparent; }
-  50%      { fill: var(--red); }
+@keyframes vizTrace {
+  from { stroke-dashoffset: 100; }
+  to   { stroke-dashoffset: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .viz-active line { animation: none; stroke-dashoffset: 0; opacity: 1; }
-  .viz-nodes rect { animation: none; }
+  .viz-active line { animation: none; opacity: 0; }
 }
 .spec-line {
   display: flex;
