@@ -787,6 +787,7 @@ main { max-width: var(--maxw); margin: 0 auto; border-left: 1px solid var(--bord
   margin: 14px 0 18px;
   line-height: 0.9;
 }
+.side-name img { height: 40px; width: auto; display: block; }
 .side-role {
   font-family: var(--f-mono);
   font-size: 13px;
@@ -813,7 +814,7 @@ main { max-width: var(--maxw); margin: 0 auto; border-left: 1px solid var(--bord
   gap: 14px 28px;
   padding: 22px var(--edge);
 }
-.foot-mark { font-family: var(--f-display); font-weight: 800; font-size: 16px; letter-spacing: 0.02em; }
+.foot-mark { height: 18px; width: auto; display: block; }
 .foot-meta { font-size: 12px; color: var(--text-dim); }
 .foot-meta:nth-child(2) { margin-right: auto; }
 
