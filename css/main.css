@@ -75,10 +75,10 @@
 :root[data-theme="light"] .engage-grid,
 :root[data-theme="light"] .capacity-bar,
 :root[data-theme="light"] .warn-panel {
-  box-shadow: 0 2px 3px rgba(0,0,0,0.16), 0 5px 9px rgba(0,0,0,0.13);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.14), 0 5px 3px rgba(0,0,0,0.30);
 }
 :root[data-theme="light"] .site-header {
-  box-shadow: 0 3px 7px rgba(0,0,0,0.14);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.12), 0 5px 3px rgba(0,0,0,0.20);
 }
 
 /* ---------- Reset ---------- */
